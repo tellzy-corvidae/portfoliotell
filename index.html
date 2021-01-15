@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+</head>
+<link rel="stylesheet" href="stylesheet.css">
+<body>
+   <div class="container">
+       <div class="nav-wrapper">
+           <div class="left-side">
+
+                <div class="nav-link-wrapper active-nav-link">
+                <a href="index.html">HOME</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="#PROJECTS">PROJECTS</a>
+                    </div> 
+
+                <div class="nav-link-wrapper">
+                <a href="about.html">ABOUT</a>
+                </div>
+
+            </div>
+
+            <div class="right-side">
+                <div class="brand-name">
+                <div>TELLGOD OYAKHILOME</div>
+                </div>
+             </div>
+
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(img/Screenshot4.png);"  ></div>
+                
+                   <div class="img-text-wrapper">
+                       <div id="PROJECTS">
+                       </div>
+                       <a href="https://tellzy-corvidae.github.io/landingpage/" class="subtitle">
+                        LANDING PAGE
+                        </a>
+
+                   </div>
+                
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(img/Screenshot3.png);"></div>
+                 
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                         <img src="" alt="">   
+                        </div>
+                        <a href="https://tellzy-corvidae.github.io/surveyform/" class="subtitle"> SURVEY PAGE</a>
+                        
+ 
+                    </div>
+                 
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(img/Screenshot2.png);"></div>
+                 
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                         <img src="" alt="">   
+                        </div>
+                        <a href="https://tellzy-corvidae.github.io/" class="subtitle">TRIBUTE PAGE</a>
+                        
+ 
+                    </div>
+                 
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(img/portfolio4.jpg);"></div>
+                 
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                         <img src="img/logo/logo4.png" alt="">   
+                        </div>
+ 
+                        <div class="subtitle">
+                         i am a content creator
+                        </div>
+ 
+                    </div>
+                 
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(img/portfolio5.jpg);"></div>
+                 
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                         <img src="img/logo/logo5.png" alt="">   
+                        </div>
+ 
+                        <div class="subtitle">
+                         i am a designer
+                        </div>
+ 
+                    </div>
+                 
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(img/portfolio6.jpg);"></div>
+                 
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                         <img src="img/logo/logo6.png" alt="">   
+                        </div>
+ 
+                        <div class="subtitle">
+                         i am an entrepreneur
+                        </div>
+ 
+                    </div>
+                 
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(img/portfolio7.jpg);"></div>
+                 
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                         <img src="" alt="">   
+                        </div>
+ 
+                        <div class="subtitle">
+                         i made all these happen
+                        </div>
+ 
+                    </div>
+                 
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(img/portfolio8.jpg);"></div>
+                 
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                         <img src="" alt="">   
+                        </div>
+ 
+                        <div class="subtitle">
+                         i made all these happen
+                        </div>
+ 
+                    </div>
+                 
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(img/portfolio9.jpg);"></div>
+                 
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                         <img src="" alt="">   
+                        </div>
+ 
+                        <div class="subtitle">
+                         i made all these happen
+                        </div>
+ 
+                    </div>
+                 
+                </div>
+ 
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+         portfolioItem.childNodes[1].classList.add('img-darken');
+    })
+
+    portfolioItem.addEventListener('mouseout', () => {
+       portfolioItem.childNodes[1].classList.remove('img-darken');
+    })
+
+ })
+</script>
+</html>
